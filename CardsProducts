@@ -1,0 +1,35 @@
+function App() {
+  function ProductCard({ name, price, category }) {
+    return (
+        <div style={{}}>
+            <h2>{name}</h2>
+            <p>Price: ₹{price}</p>
+            <p>Category: {category}</p>
+        </div>
+    );
+}
+
+    return (
+        <div>
+            <ProductCard
+                name="Laptop"
+                price={50000}
+                category="Electronics"
+            />
+
+            <ProductCard
+                name="Mobile"
+                price={25000}
+                category="Electronics"
+            />
+
+            <ProductCard
+                name="Headphones"
+                price={3000}
+                category="Accessories"
+            />
+        </div>
+    );
+}
+
+export default App;
